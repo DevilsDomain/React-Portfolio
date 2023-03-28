@@ -1,11 +1,13 @@
+import Link from 'next/link';
 import 'src/components/Button/Button.css';
+
 
 function Button({children, type}: {children: React.ReactNode, type: string}) 
 {
   return (
-    <button className={`${type} h-12 w-36 text-center`}>
+    <Link href={`/${children}`} className={`${type} h-12 w-36 text-center pt-3`}>
         {children}
-    </button>
+    </Link>
   )
 }
 
