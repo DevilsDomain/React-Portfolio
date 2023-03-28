@@ -26,10 +26,10 @@ export default function Home() {
         <Image src={star} width={63} height={71} alt='star' className="z-0 relative" />
         <h1 className='z-10 relative text-6xl	font-bold mb-10	'>ALARA</h1>
         <div className='flex flex-col flex-wrap w-64 gap-y-5	items-center '>
-          <Button type='primary'>CONTACT</Button>
-          <Button type="secondary">RECENT WORK</Button>
+          <Button type='primary' link='contact'>CONTACT</Button>
+          <Button type="secondary" link='recent-work'>RECENT WORK</Button>
         </div>
-        <div className='flex flex-col gap-y-8 mt-10 '>
+        <div className='flex flex-col gap-y-8 '>
           <UI />
           <Frontend />
           <Backend />
