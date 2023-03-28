@@ -8,6 +8,8 @@ import Button from '@/components/Button/Button'
 import UI from '@/components/UI'
 import Frontend from '@/components/Frontend'
 import Backend from '@/components/Backend'
+import Navbar from '@/components/Navbar/Navbar'
+
 
 
 
@@ -29,12 +31,13 @@ export default function Home() {
           <Button type='primary' link='contact'>CONTACT</Button>
           <Button type="secondary" link='recent-work'>RECENT WORK</Button>
         </div>
-        <div className='flex flex-col gap-y-8 '>
+        <div className='flex flex-col gap-y-8 mt-10'>
           <UI />
           <Frontend />
           <Backend />
         </div>
       </div>
+      <Navbar />
     </div>
   )
 }
