@@ -1,0 +1,9 @@
+.primary {
+    background-color: #232323;
+    color: #EFEFEF;
+}
+
+.secondary {
+    border: #232323 1px solid;
+    color: #232323;
+}
