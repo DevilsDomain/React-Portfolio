@@ -30,12 +30,18 @@ export default function Home() {
           className='blur-3xl absolute z-0 image-size p-14'/>
       </div>
       <h2 className='z-10 relative text-base font-light	leading-5 mt-20	mb-5 md:text-3xl 
-      md:font-extralight'
+      md:font-extralight md:mr-24'
       >MEET YOUR FUTURE DEVELOPER</h2>
-      <div className="relative flex flex-col items-center">
-        <h1 className='z-10 relative text-6xl	font-bold'>SATI</h1>
-        <Image src={star} width={63} height={71} alt='star' className="z-0 relative" />
-        <h1 className='z-10 relative text-6xl	font-bold mb-10	'>ALARA</h1>
+      <div className="relative flex flex-col items-center md:items-start	">
+        <div className='flex flex-col items-center md:flex md:flex-row md:-ml-20'>
+          <h1 className='z-10 relative text-6xl	font-bold
+          md:text-[13rem]
+          '>SATI</h1>
+          <Image src={star} width={50} height={50} alt='star' className="z-0 relative	md:w-44	md:h-44 md:pl-4" />
+        </div>
+        <h1 className='z-10 relative text-6xl	font-bold mb-10	
+        md:text-[13rem] md:ml-64
+        '>ALARA</h1>
         <div className='flex flex-col flex-wrap w-64 gap-y-5	items-center '>
           <Button type='primary' link='contact'>CONTACT</Button>
           <Button type="secondary" link='recent-work'>RECENT WORK</Button>
