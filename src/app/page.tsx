@@ -7,7 +7,6 @@ import Button from '@/components/Button/Button'
 import UI from '@/components/UI'
 import Frontend from '@/components/Frontend'
 import Backend from '@/components/Backend'
-import Navbar from '@/components/Navbar/Navbar'
 import Link from 'next/link'
 
 
