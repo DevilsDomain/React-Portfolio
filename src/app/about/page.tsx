@@ -46,7 +46,7 @@ function page() {
             </div>
                  <div className='flex flex-row w-full justify-center mb-20 scale-105
                  md:scale-125 md:justify-end md:mr-96 md:w-10/12'>
-                    <Button type='secondary' link='/contact'>CONTACT</Button>
+                    <Button type='secondary' link='contact'>CONTACT</Button>
                  </div>
              <div className='flex flex-col gap-y-7 text-4xl font-bold md:flex-row md:gap-x-10 md:mb-20'>
                 <Link href={'https://github.com/DevilsDomain'} target='_blank' 
