@@ -33,21 +33,22 @@ export default function Home() {
       md:font-extralight md:-ml-96'
       >MEET YOUR FUTURE DEVELOPER</h2>
       <div className="relative flex flex-col items-center md:items-start	">
-        <div className='flex flex-col items-center md:flex md:flex-row md:-ml-36'>
+        <div className='flex flex-col items-center md:flex md:flex-row'>
           <h1 className='z-10 relative text-6xl	font-bold
-          md:text-[11rem]
+          md:text-[13rem]
           '>SATI</h1>
           <Image src={star} width={50} height={50} alt='star' className="z-0 relative	md:w-44	md:h-44 md:pl-4" />
         </div>
         <h1 className='z-10 relative text-6xl	font-bold mb-10	
-        md:text-[11rem] md:ml-40 md:mb-6
+        md:text-[13rem] md:ml-80 md:mb-3
         '>ALARA</h1>
         <div className='flex flex-col flex-wrap w-64 gap-y-10	items-center
-        md:w-80	md:flex-row md:gap-5 md:scale-110	md:ml-96'>
+        md:w-full	md:flex-row md:gap-5	md:justify-end md:-ml-16'>
           <Button type='primary' link='contact'>CONTACT</Button>
           <Button type="secondary" link='recent-work'>RECENT WORK</Button>
         </div>
-        <div className='flex flex-col gap-y-8 mt-10'>
+        <div className='flex flex-col gap-y-8 mt-10
+         md:flex-row md:gap-x-60 md:-ml-10 md:scale-90 md:mt-14'>
           <UI />
           <Frontend />
           <Backend />
