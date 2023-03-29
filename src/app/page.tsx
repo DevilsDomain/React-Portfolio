@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import 'src/app/page.css'
 import star from '../../public/star.svg'
 import homeTop from '../../public/homeTop.svg'
@@ -9,6 +8,7 @@ import UI from '@/components/UI'
 import Frontend from '@/components/Frontend'
 import Backend from '@/components/Backend'
 import Navbar from '@/components/Navbar/Navbar'
+import Link from 'next/link'
 
 
 
@@ -16,6 +16,13 @@ import Navbar from '@/components/Navbar/Navbar'
 export default function Home() {
   return (
     <div className="relative flex flex-col items-center">
+      <div className='hidden md:block'>
+            <div className='flex flex-row gap-100 pt-4'>
+                <Link className="text-sm text-stone-900 font-medium" href={'/'}>HOME</Link>
+                <Link className="text-sm text-stone-900 font-medium" href={'/about'}>ABOUT</Link>
+                <Link className="text-sm text-stone-900 font-medium" href={'/projects'}>PROJECTS</Link>
+            </div>
+        </div>
       <div className='z-0 h-screen	w-screen absolute'>
           <Image src={homeTop} width={300} height={380} alt='blob top'
           className='blur-3xl absolute z-0  ml-28 bottom-0 right-0 image-size p-14'/>
@@ -37,7 +44,9 @@ export default function Home() {
           <Backend />
         </div>
       </div>
-      <Navbar />
+      <div className="flex flex-col h-full absolute top-36 right-20 mt-64">
+        <Navbar />
+      </div>
     </div>
   )
 }
