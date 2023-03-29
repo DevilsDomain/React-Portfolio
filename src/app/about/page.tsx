@@ -44,7 +44,8 @@ function page() {
                 Aliquam faucibus erat ut tincidunt cursus. Cras et ullamcorper velit. In hac habitasse platea dictumst.
                  Nunc vitae dui quis risus elementum auctor.</p>
             </div>
-                 <div className='flex flex-row w-full justify-center mb-20 scale-105'>
+                 <div className='flex flex-row w-full justify-center mb-20 scale-105
+                 md:scale-125 md:justify-end md:mr-96 md:w-10/12'>
                     <Button type='secondary' link='/contact'>CONTACT</Button>
                  </div>
              <div className='flex flex-col gap-y-7 text-4xl font-bold'>
