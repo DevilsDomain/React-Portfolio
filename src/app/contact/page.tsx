@@ -31,7 +31,7 @@ function page() {
             <input id='idea' name='idea' placeholder='I have this crazy idea...' 
             className='bg-transparent placeholder:text-slate-900 border-b border-slate-900 placeholder:font-light' />
             <div className='flex flex-col mt-10 items-center'>
-                <Button type='primary'>SEND</Button>
+                <Button type='primary' link='contact/sent'>SEND</Button>
             </div>
         </form> 
        </div>
