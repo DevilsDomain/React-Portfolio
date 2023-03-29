@@ -48,7 +48,7 @@ function page() {
                  md:scale-125 md:justify-end md:mr-96 md:w-10/12'>
                     <Button type='secondary' link='/contact'>CONTACT</Button>
                  </div>
-             <div className='flex flex-col gap-y-7 text-4xl font-bold'>
+             <div className='flex flex-col gap-y-7 text-4xl font-bold md:flex-row md:gap-x-10 md:mb-20'>
                 <Link href={'https://github.com/DevilsDomain'} target='_blank' 
                 className='hover:underline'>GITHUB</Link>
                 <Link href={'https://dribbble.com/'} target='_blank'
