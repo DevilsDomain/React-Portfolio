@@ -1,8 +1,15 @@
 import React from 'react'
+import ProjectLayout from '@/components/ProjectsLayout'
+import 'src/app/projects/page.css'
+
 
 function page() {
   return (
-    <div>page</div>
+    <ProjectLayout>
+        <div className='background '>
+            <p>hello</p>
+        </div>
+    </ProjectLayout>
   )
 }
 

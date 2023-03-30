@@ -7,13 +7,14 @@ import Button from '@/components/Button/Button'
 import UI from '@/components/UI'
 import Frontend from '@/components/Frontend'
 import Backend from '@/components/Backend'
-import Link from 'next/link'
+import DefaultLayout from '@/components/DefaultLayout'
 
 
 
 
 export default function Home() {
   return (
+  <DefaultLayout>
     <div className="relative flex flex-col items-center">
       <div className='z-0 h-screen	w-screen absolute'>
           <Image src={homeTop} width={300} height={380} alt='blob top'
@@ -47,6 +48,7 @@ export default function Home() {
         </div>
       </div>
     </div>
+  </DefaultLayout>
   )
 }
 
