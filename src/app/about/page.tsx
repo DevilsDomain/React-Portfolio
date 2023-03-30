@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Image from 'next/image'
 import aboutTop from '../../../public/aboutBottom.svg'
@@ -7,8 +8,22 @@ import star from '../../../public/star.svg'
 import Link from 'next/link'
 import Button from '@/components/Button/Button'
 import DefaultLayout from '@/components/DefaultLayout'
+import { getClient } from '../../../ApolloClient'
+import {gql} from '@apollo/client'
 
-function page() {
+const SOCIAL_LINKS = gql`
+query MyQuery {
+    contactLinks {
+      socialMediaLink
+    }
+  }
+  
+`
+
+async function page() {
+  const client = getClient();
+  const { data } = await client.query({query: SOCIAL_LINKS});
+  console.log(data.contactLinks)
   return (
     <DefaultLayout>
         <div className="relative flex flex-col items-center">
@@ -51,14 +66,12 @@ function page() {
                         <Button type='secondary' link='contact'>CONTACT</Button>
                     </div>
                 <div className='flex flex-col gap-y-7 text-4xl font-bold md:flex-row md:gap-x-10 md:mb-20'>
-                    <Link href={'https://github.com/DevilsDomain'} target='_blank' 
-                    className='hover:underline'>GITHUB</Link>
-                    <Link href={'https://dribbble.com/'} target='_blank'
-                    className='hover:underline'>DRIBBBLE</Link>
-                    <Link href={'https://www.behance.net/'} target='_blank'
-                    className='hover:underline'>BEHANCE</Link>
-                    <Link href={'https://www.linkedin.com/in/sati-alara-erzincan-7a0348220/'} target='_blank'
-                    className='hover:underline'>LINKEDIN</Link>
+                    {data.contactLinks.map((link, linkIndex) => {
+                        return(
+                        <Link key={linkIndex} href={link.socialMediaLink[1]} target='_blank' 
+                        className='hover:underline uppercase'>{link.socialMediaLink[0]}</Link>
+                        );
+                    })}
                 </div>
             </div>
         </div>

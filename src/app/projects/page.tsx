@@ -29,7 +29,6 @@ query MyQuery {
 async function page() {
   const client = getClient();
   const { data } = await client.query({query: PROJECTS_DATA});
-  console.log(data)
   return (
     <ProjectLayout>
     <div className='background flex flex-col justify-center overflow-x-hidden'>
