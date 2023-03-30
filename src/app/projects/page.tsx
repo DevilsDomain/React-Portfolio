@@ -10,9 +10,25 @@ import github from '../../../public/github.svg'
 import dribbble from '../../../public/dribbble.svg'
 import behance from '../../../public/behance.svg'
 import linkedin from '../../../public/linkedin.svg'
+import { getClient } from '../../../ApolloClient'
+import {gql} from '@apollo/client'
 
+const PROJECTS_DATA = gql`
+query MyQuery {
+  projectDatas {
+    backend
+    frontend
+    imageUrl
+    projectDescription
+    title
+    updatedAt
+  }
+} `;
 
-function page() {
+async function page() {
+  const client = getClient();
+  const { data } = await client.query({query: PROJECTS_DATA });
+  console.log(data)
   return (
     <ProjectLayout>
     <div className='background flex flex-col justify-center'>
