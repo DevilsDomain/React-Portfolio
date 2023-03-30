@@ -29,7 +29,7 @@ function page() {
             <h1>{`LET'S MAKE IT A REALITY!`}</h1>
           </div>
           <div className='flex flex-row w-full justify-center scale-105 mb-10 md:justify-start md:ml-64 '>
-            <Button type='secondary' link='home'>HOME</Button>
+            <Button type='secondary' link=''>HOME</Button>
           </div>
           <div className='flex flex-col gap-y-3 items-center md:-mt-24 md:-mr-96 md:ml-72'>
             <div>
