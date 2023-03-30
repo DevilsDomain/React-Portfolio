@@ -4,9 +4,9 @@ import star from '../../public/star.svg'
 import homeTop from '../../public/homeTop.svg'
 import homeBottom from '../../public/homeBottom.svg'
 import Button from '@/components/Button/Button'
-import UI from '@/components/UI'
-import Frontend from '@/components/Frontend'
-import Backend from '@/components/Backend'
+import UI from '@/components/Tags/UI'
+import Frontend from '@/components/Tags/Frontend'
+import Backend from '@/components/Tags/Backend'
 import DefaultLayout from '@/components/DefaultLayout'
 
 

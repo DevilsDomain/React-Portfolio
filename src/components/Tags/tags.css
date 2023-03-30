@@ -1,0 +1,7 @@
+.dark-text {
+    color: #EFEFEF;
+}
+
+.dark-icon {
+    filter: invert(1);
+}
