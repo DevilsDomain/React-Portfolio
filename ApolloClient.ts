@@ -1,4 +1,3 @@
-
 import { ApolloClient, InMemoryCache, HttpLink } from "@apollo/client";
 
 let client: ApolloClient<any> | null = null;
