@@ -13,27 +13,31 @@ import linkedin from '../../../../public/linkedin.svg'
 
 function page() {
   return (
-    <div className='relative flex flex-col items-center'>
+    <div className='relative flex flex-col items-center	'>
       <div className='z-0 h-screen w-screen absolute'>
           <Image src={sentTop} width={600} height={600} alt='blob top'
           className='blur-3xl absolute z-0 top-0 right-0 ml-44 zindex-1'/>
           <Image src={sentBottom} width={550} height={550} alt='blob top' 
           className='blur-3xl absolute z-0 bottom-0 left-0 mr-40 zindex-1'/>
        </div>
-       <div className='relative flex flex-col items-center'>
-        <div className='text-6xl	font-bold mx-5	mt-20 mb-10 md:text-[11rem]'>
-          <h1 className='mb-14'>GOT YOUR IDEA.</h1>
+       <div className='relative flex flex-col overflow-x-hidden'>
+        <div className='text-6xl	font-bold mx-5	mt-20 mb-10 md:text-[8rem] md:ml-52'>
+          <h1 className='mb-14 md:mb-24'>GOT YOUR IDEA.</h1>
           <h1>{`LET'S MAKE IT A REALITY!`}</h1>
         </div>
-        <div className='flex flex-row w-full justify-center scale-105 mb-10	'>
+        <div className='flex flex-row w-full justify-center scale-105 mb-10 md:justify-start md:ml-64 '>
           <Button type='secondary' link='home'>HOME</Button>
         </div>
-        <h2 className='text-base font-medium	mb-5'>ALSO FIND ME ON</h2>
-        <div className='flex flex-col gap-y-3'>
-          <Image src={github} width={60} height={60} alt='github icon' />
-          <Image src={dribbble} width={60} height={60} alt='dribbble icon' />
-          <Image src={behance} width={60} height={60} alt='behance icon' />
-          <Image src={linkedin} width={60} height={60} alt='linkedin icon' />
+        <div className='flex flex-col gap-y-3 items-center md:-mt-24 md:-mr-96 md:ml-72'>
+          <div>
+            <h2 className='text-base font-medium	mb-5'>ALSO FIND ME ON</h2>
+          </div>
+          <div className='md:flex md: flex-row md:border-b-2 md:border-slate-900 md:pb-3 md:mb-20'>
+            <Image src={github} width={60} height={60} alt='github icon' />
+            <Image src={dribbble} width={60} height={60} alt='dribbble icon' />
+            <Image src={behance} width={60} height={60} alt='behance icon' />
+            <Image src={linkedin} width={60} height={60} alt='linkedin icon' />
+          </div>
         </div>
        </div>
     </div>
