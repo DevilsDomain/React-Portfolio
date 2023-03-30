@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '@/components/Navbar/Navbar'
 import Link from 'next/link'
 import 'src/app/projects/page.css'
+import 'src/app/globals.css'
 
 type ProjectLayoutProps = {
   children: React.ReactNode

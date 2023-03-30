@@ -6,8 +6,8 @@ import 'src/app/projects/page.css'
 function page() {
   return (
     <ProjectLayout>
-        <div className='background '>
-            <p>hello</p>
+        <div className='background h-screen w-screen'>
+            <p className='text-white'>hello</p>
         </div>
     </ProjectLayout>
   )
