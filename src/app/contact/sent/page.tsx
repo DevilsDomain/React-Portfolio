@@ -8,6 +8,7 @@ import github from '../../../../public/github.svg'
 import dribbble from '../../../../public/dribbble.svg'
 import behance from '../../../../public/behance.svg'
 import linkedin from '../../../../public/linkedin.svg'
+import Link from 'next/link'
 
 
 
@@ -33,10 +34,18 @@ function page() {
             <h2 className='text-base font-medium	mb-5'>ALSO FIND ME ON</h2>
           </div>
           <div className='md:flex md: flex-row md:border-b-2 md:border-slate-900 md:pb-3 md:mb-20'>
-            <Image src={github} width={60} height={60} alt='github icon' />
-            <Image src={dribbble} width={60} height={60} alt='dribbble icon' />
-            <Image src={behance} width={60} height={60} alt='behance icon' />
-            <Image src={linkedin} width={60} height={60} alt='linkedin icon' />
+            <Link href={'https://github.com/DevilsDomain'} target='_blank'>
+              <Image src={github} width={60} height={60} alt='github icon' className='color'/>
+            </Link>
+            <Link href={'https://dribbble.com/'} target='_blank'>
+              <Image src={dribbble} width={60} height={60} alt='dribbble icon' className='color' />
+            </Link>
+            <Link href={'https://www.behance.net/'} target='_blank'>
+              <Image src={behance} width={60} height={60} alt='behance icon' className='color' />
+            </Link>
+            <Link href={'https://www.linkedin.com/in/sati-alara-erzincan-7a0348220/'} target='_blank'>
+              <Image src={linkedin} width={60} height={60} alt='linkedin icon' className='color' />
+            </Link>
           </div>
         </div>
        </div>
