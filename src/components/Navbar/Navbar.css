@@ -80,3 +80,12 @@
   .primary-black {
     color: #212121;
   }
+
+  .dark{
+    color:#212121;
+    background-color: #EFEFEF;
+  }
+
+  .dark-2 {
+    filter: invert(1);
+  }

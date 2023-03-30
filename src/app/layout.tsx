@@ -29,7 +29,7 @@ export default function RootLayout({
       </div>
 
       <div className="flex flex-col h-full absolute top-36 right-20 mt-64">
-        <Navbar />
+        <Navbar mode='dark'/>
       </div>
         {children}
         </body>
