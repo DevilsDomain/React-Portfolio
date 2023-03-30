@@ -19,6 +19,10 @@ query MyQuery {
   }
   
 `
+interface ContactLink {
+    __typename: string;
+    socialMediaLink: [string, string];
+  }
 
 async function page() {
   const client = getClient();
@@ -66,7 +70,7 @@ async function page() {
                         <Button type='secondary' link='contact'>CONTACT</Button>
                     </div>
                 <div className='flex flex-col gap-y-7 text-4xl font-bold md:flex-row md:gap-x-10 md:mb-20'>
-                    {data.contactLinks.map((link, linkIndex) => {
+                    {data.contactLinks.map((link: ContactLink, linkIndex: number) => {
                         return(
                         <Link key={linkIndex} href={link.socialMediaLink[1]} target='_blank' 
                         className='hover:underline uppercase'>{link.socialMediaLink[0]}</Link>

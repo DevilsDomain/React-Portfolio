@@ -4,15 +4,17 @@ import Image from 'next/image'
 import UI from './Tags/UI'
 import Frontend from './Tags/Frontend'
 import Backend from './Tags/Backend'
+import { ProjectData } from '@/app/projects/page'
 
-function Project({data, id}) {
+
+function Project({data, id}: {data: ProjectData, id: number}) {
   return (
     <div className='flex flex-col items-center mt-32 md:flex-row md:tems-start overflow-x-hidden'>
         <div className='flex flex-col items-center md:items-start md:-mt-60'>
             <h1 className='text-white text-[7rem] font-bold md:ml-20'>{id < 9 ? `0${id+1}` : `${id}`}</h1>
             <h2 className='text-white text-3xl text-justify mb-2 md:ml-20 md:text-center'>PROJECT DESCRIPTION</h2>
             <div className='mx-16 md:mx-20'>
-                {data.projectDescription.map((p, pIndex) => {
+                {data.projectDescription.map((p: string, pIndex: number) => {
                     return(
                 <p key={pIndex} className='text-white text-justify text-sm mb-10 md:text-base md:w-96'>{p}</p>
                     );

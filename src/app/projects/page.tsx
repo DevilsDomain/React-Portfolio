@@ -26,6 +26,15 @@ query MyQuery {
   }
 } `;
 
+export interface ProjectData {
+  ui: boolean;
+  backend: boolean;
+  frontend: boolean;
+  imageUrl: string;
+  projectDescription: string[];
+  title: string;
+}
+
 async function page() {
   const client = getClient();
   const { data } = await client.query({query: PROJECTS_DATA});
@@ -39,7 +48,7 @@ async function page() {
             <Image src={explore} height={200} width={200} alt='graphic icon' className='mb-28 ml-2 md:mr-20
             md:scale-105'/>
         </div>
-        {data.projectDatas.map((project, projectId) => {
+        {data.projectDatas.map((project: ProjectData, projectId: number) => {
           return(<Project key={projectId} id={projectId} data={project}/>);
         })}
         <div className='flex flex-col items-center border-t border-gray-30 mb-32 md:scale-110'>
