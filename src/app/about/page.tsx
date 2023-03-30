@@ -27,7 +27,6 @@ interface ContactLink {
 async function page() {
   const client = getClient();
   const { data } = await client.query({query: SOCIAL_LINKS});
-  console.log(data.contactLinks)
   return (
     <DefaultLayout>
         <div className="relative flex flex-col items-center">
