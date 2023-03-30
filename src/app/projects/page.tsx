@@ -24,7 +24,7 @@ function page() {
             md:scale-105'/>
         </div>
         <Project />
-        <div className='flex flex-col items-center border-t border-gray-30 mb-32'>
+        <div className='flex flex-col items-center border-t border-gray-30 mb-32 md:scale-110'>
             <Image src={star} width={100} height={100} alt='star icon'className='invert scale-75 mt-10 mb-10'/>
             <p className='text-white w-28 text-justif mb-10'>HAVE AN IDEA? LETS MAKE IT A REALITY.</p>
             <div className='flex flex-col items-center gap-y-3 mb-10'>
